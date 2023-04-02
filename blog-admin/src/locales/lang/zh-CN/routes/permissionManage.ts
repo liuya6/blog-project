@@ -1,0 +1,15 @@
+export default {
+  permissionManage: '权限管理',
+  roleManage: '角色管理',
+  roleAdd: '新增角色',
+  roleEdit: '编辑角色',
+  roleDel: '删除角色',
+  accountManage: '账号管理',
+  accountAdd: '新增账号',
+  accountEdit: '编辑账号',
+  accountDel: '删除账号',
+  menuManage: '菜单管理',
+  menuAdd: '菜单添加',
+  menuEdit: '菜单编辑',
+  menuDel: '菜单删除',
+};

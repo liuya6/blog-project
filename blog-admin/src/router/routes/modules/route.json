@@ -1,0 +1,341 @@
+{
+  "route": [
+    {
+      "path": "/contentManage",
+      "name": "ContentManage",
+      "component": "LAYOUT",
+      "redirect": "/contentManage/videoManage",
+      "meta": {
+        "orderNo": 9,
+        "icon": "eos-icons:cluster-management-outlined",
+        "title": "routes.contentManage.contentManage"
+      },
+      "children": [
+        {
+          "path": "videoManage",
+          "name": "VideoManage",
+          "component": "parentLayout",
+          "redirect": "/contentManage/videoManage/videoList",
+          "meta": { "icon": "carbon:video-chat", "title": "routes.contentManage.videoManage" },
+          "children": [
+            {
+              "path": "videoList",
+              "name": "VideoList",
+              "component": "/contentManage/videoManage/videoList/index.vue",
+              "meta": { "icon": "carbon:playlist", "title": "routes.contentManage.videoManage" }
+            },
+            {
+              "path": "videoEdit",
+              "name": "VideoEdit",
+              "component": "button",
+              "meta": { "title": "routes.contentManage.videoEdit", "hideMenu": true }
+            },
+            {
+              "path": "videoDel",
+              "name": "VideoDel",
+              "component": "button",
+              "meta": { "title": "routes.contentManage.videoDel", "hideMenu": true }
+            },
+            {
+              "path": "videoType",
+              "name": "VideoType",
+              "component": "/contentManage/videoManage/videoType/index.vue",
+              "meta": { "icon": "carbon:type-pattern", "title": "routes.contentManage.videoType" }
+            },
+            {
+              "path": "videoTypeAdd",
+              "name": "VideoTypeAdd",
+              "component": "button",
+              "meta": { "title": "routes.contentManage.videoTypeAdd", "hideMenu": true }
+            },
+            {
+              "path": "videoTypeEdit",
+              "name": "VideoTypeEdit",
+              "component": "button",
+              "meta": { "title": "routes.contentManage.videoTypeEdit", "hideMenu": true }
+            },
+            {
+              "path": "videoTypeDel",
+              "name": "VideoTypeDel",
+              "component": "button",
+              "meta": { "title": "routes.contentManage.videoTypeDel", "hideMenu": true }
+            }
+          ]
+        },
+        {
+          "path": "bannerManage",
+          "name": "BannerManage",
+          "component": "/contentManage/bannerManage/index.vue",
+          "meta": {
+            "icon": "carbon:carousel-horizontal",
+            "title": "routes.contentManage.bannerManage"
+          }
+        },
+        {
+          "path": "bannerAdd",
+          "name": "BannerAdd",
+          "component": "button",
+          "meta": { "title": "routes.contentManage.bannerAdd", "hideMenu": true }
+        },
+        {
+          "path": "bannerEdit",
+          "name": "bannerEdit",
+          "component": "button",
+          "meta": { "title": "routes.contentManage.bannerEdit", "hideMenu": true }
+        },
+        {
+          "path": "bannerDel",
+          "name": "bannerDel",
+          "component": "button",
+          "meta": { "title": "routes.contentManage.bannerDel", "hideMenu": true }
+        },
+        {
+          "path": "planManage",
+          "name": "PlanManage",
+          "component": "parentLayout",
+          "redirect": "/contentManage/planManage/planList",
+          "meta": { "icon": "carbon:data-blob", "title": "routes.contentManage.planManage" },
+          "children": [
+            {
+              "path": "planList",
+              "name": "PlanList",
+              "component": "/contentManage/planManage/planList/index.vue",
+              "meta": { "icon": "carbon:list-dropdown", "title": "routes.contentManage.planList" }
+            },
+            {
+              "path": "planAdd",
+              "name": "PlanAdd",
+              "component": "/planManage/planList/planChange/index.vue",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planAdd" }
+            },
+            {
+              "path": "planEdit",
+              "name": "PlanEdit",
+              "component": "/planManage/planList/planChange/index.vue",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planEdit" }
+            },
+            {
+              "path": "planDel",
+              "name": "PlanDel",
+              "component": "button",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planDel" }
+            },
+            {
+              "path": "planTag",
+              "name": "PlanTag",
+              "component": "/contentManage/planManage/planTag/index.vue",
+              "meta": { "icon": "carbon:tag", "title": "routes.contentManage.planTag" }
+            },
+            {
+              "path": "planTagAdd",
+              "name": "PlanTagAdd",
+              "component": "button",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planTagAdd" }
+            },
+            {
+              "path": "planTagEdit",
+              "name": "PlanTagEdit",
+              "component": "button",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planTagEdit" }
+            },
+            {
+              "path": "planTagDel",
+              "name": "PlanTagDel",
+              "component": "button",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.planTagDel" }
+            },
+            {
+              "path": "matchCollection",
+              "name": "MatchCollection",
+              "component": "/contentManage/planManage/matchCollection/index.vue",
+              "meta": {
+                "icon": "carbon:ibm-match-360",
+                "title": "routes.contentManage.matchCollection"
+              }
+            },
+            {
+              "path": "matchAdd",
+              "name": "MatchAdd",
+              "component": "/contentManage/planManage/matchCollection/matchChange/index.vue",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.matchAdd" }
+            },
+            {
+              "path": "matchEdit",
+              "name": "MatchEdit",
+              "component": "/contentManage/planManage/matchCollection/matchChange/index.vue",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.matchEdit" }
+            },
+            {
+              "path": "matchDel",
+              "name": "MatchDel",
+              "component": "button",
+              "meta": { "hideMenu": true, "title": "routes.contentManage.matchDel" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "name": "Dashboard",
+      "redirect": "/dashboard/analysis",
+      "component": "LAYOUT",
+      "meta": { "orderNo": 10, "icon": "ion:grid-outline", "title": "Dashboard" },
+      "children": [
+        {
+          "path": "analysis",
+          "name": "Analysis",
+          "component": "/dashboard/analysis/index.vue",
+          "meta": { "title": "routes.dashboard.analysis" }
+        },
+        {
+          "path": "monitoring",
+          "name": "Monitoring",
+          "component": "/dashboard/monitoring/index.vue",
+          "meta": { "title": "routes.dashboard.monitoring" }
+        }
+      ]
+    },
+    {
+      "path": "/permissionManage",
+      "name": "PermissionManage",
+      "component": "LAYOUT",
+      "redirect": "/permissionManage/accountManage",
+      "meta": {
+        "orderNo": 17,
+        "icon": "carbon:settings-services",
+        "title": "routes.permissionManage.permissionManage"
+      },
+      "children": [
+        {
+          "path": "roleManage",
+          "name": "RoleManage",
+          "component": "/permissionManage/roleManage/index.vue",
+          "meta": {
+            "icon": "ic:outline-manage-accounts",
+            "title": "routes.permissionManage.roleManage"
+          }
+        },
+        {
+          "path": "roleAdd",
+          "name": "RoleAdd",
+          "component": "/permissionManage/roleManage/roleChange/index.vue",
+          "meta": { "title": "routes.permissionManage.roleAdd", "hideMenu": true }
+        },
+        {
+          "path": "roleEdit",
+          "name": "RoleEdit",
+          "component": "/permissionManage/roleManage/roleChange/index.vue",
+          "meta": { "title": "routes.permissionManage.roleEdit", "hideMenu": true }
+        },
+        {
+          "path": "accountManage",
+          "name": "AccountManage",
+          "component": "/permissionManage/accountManage/index.vue",
+          "meta": {
+            "icon": "carbon:group-account",
+            "title": "routes.permissionManage.accountManage"
+          }
+        },
+        {
+          "path": "accountAdd",
+          "name": "AccountAdd",
+          "component": "/permissionManage/accountManage/accountChange/index.vue",
+          "meta": { "title": "routes.permissionManage.accountAdd", "hideMenu": true }
+        },
+        {
+          "path": "accountEdit",
+          "name": "AccountEdit",
+          "component": "/permissionManage/accountManage/accountChange/index.vue",
+          "meta": { "title": "routes.permissionManage.accountEdit", "hideMenu": true }
+        },
+        {
+          "path": "menuManage",
+          "name": "MenuManage",
+          "component": "/permissionManage/menuManage/index.vue",
+          "meta": {
+            "title": "routes.permissionManage.menuManage",
+            "icon": "carbon:open-panel-left"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/tradeManage",
+      "name": "TradeManage",
+      "component": "LAYOUT",
+      "redirect": "/tradeManage/subscribe",
+      "meta": {
+        "orderNo": 11,
+        "icon": "ant-design:transaction-outlined",
+        "title": "routes.tradeManage.tradeManage"
+      },
+      "children": [
+        {
+          "path": "subscribe",
+          "name": "Subscribe",
+          "component": "/tradeManage/subscribe/index.vue",
+          "meta": {
+            "icon": "material-symbols:unsubscribe-outline-rounded",
+            "title": "routes.tradeManage.subscribe"
+          }
+        },
+        {
+          "path": "recharge",
+          "name": "Recharge",
+          "component": "/tradeManage/recharge/index.vue",
+          "meta": { "icon": "carbon:carousel-horizontal", "title": "routes.tradeManage.recharge" }
+        },
+        {
+          "path": "order",
+          "name": "Order",
+          "component": "/tradeManage/order/index.vue",
+          "meta": { "icon": "carbon:classification", "title": "routes.tradeManage.order" }
+        }
+      ]
+    },
+    {
+      "path": "/userManage",
+      "name": "UserManage",
+      "component": "LAYOUT",
+      "redirect": "/userManage/userList",
+      "meta": {
+        "orderNo": 12,
+        "icon": "carbon:id-management",
+        "title": "routes.userManage.userManage"
+      },
+      "children": [
+        {
+          "path": "userList",
+          "name": "UserList",
+          "component": "/userManage/userList/index.vue",
+          "meta": { "icon": "carbon:user-avatar", "title": "routes.userManage.userList" }
+        },
+        {
+          "path": "expertManage",
+          "name": "ExpertManage",
+          "redirect": "/contentManage/expertManage/expertList",
+          "component": "parentLayout",
+          "meta": {
+            "icon": "grommet-icons:user-expert",
+            "title": "routes.userManage.expertManage"
+          },
+          "children": [
+            {
+              "path": "expertList",
+              "name": "ExpertList",
+              "component": "/userManage/expertManage/expertList/index.vue",
+              "meta": { "icon": "bi:list-columns", "title": "routes.userManage.expertList" }
+            },
+            {
+              "path": "expertTag",
+              "name": "ExpertTag",
+              "component": "/userManage/expertManage/expertTag/index.vue",
+              "meta": { "icon": "carbon:type-pattern", "title": "routes.userManage.expertTag" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

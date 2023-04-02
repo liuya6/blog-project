@@ -1,0 +1,13 @@
+stages:
+  - deploy-dev
+deploy-dev:
+  stage: deploy-dev
+  only:
+    - dev
+  script:
+    - cd /www/wwwroot/admin.todayball.com/
+    - git config --global --add safe.directory /www/wwwroot/admin.todayball.com
+    - git checkout -f
+    - git pull origin dev
+  tags:
+    - admin-todayball-com
